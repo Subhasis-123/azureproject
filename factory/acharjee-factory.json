@@ -1,0 +1,15 @@
+{
+	"name": "acharjee-factory",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "453daf15-80d6-4f98-a23b-d085fb69f9dd",
+		"tenantId": "93ab10cc-060b-4be0-8a17-aa14f8fc14ec"
+	}
+}
