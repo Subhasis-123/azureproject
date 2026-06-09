@@ -318,7 +318,11 @@
 				"userProperties": [],
 				"typeProperties": {
 					"method": "POST",
-					"url": "https://prod-09.northcentralus.logic.azure.com:443/workflows/7e95338235204478b4df4a0c0a461109/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=1Rl1prVc43kQAgZbaOoHOS3eA78ePdotFRB6XApHUz0"
+					"url": "https://prod-09.northcentralus.logic.azure.com:443/workflows/7e95338235204478b4df4a0c0a461109/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=1Rl1prVc43kQAgZbaOoHOS3eA78ePdotFRB6XApHUz0",
+					"body": {
+						"value": "{\n    \"pipeline_name\" : \"@{pipeline().Pipeline}\",\n    \"pipeline_runId\": \"@{pipeline().RunId}\"\n}",
+						"type": "Expression"
+					}
 				}
 			}
 		],
